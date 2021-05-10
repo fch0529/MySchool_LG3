@@ -111,7 +111,10 @@ namespace MySchool
             SqlCommand cmd = new SqlCommand(sql, con);
             try
             {
-                DataTable table = new DataTable();
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                sda.Fill(ds);
+                return ds.Tables[0];
                 
             }
             catch (Exception ex)

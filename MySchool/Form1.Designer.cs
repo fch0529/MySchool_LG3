@@ -76,6 +76,7 @@ namespace MySchool
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.Size = new System.Drawing.Size(152, 21);
             this.txtPwd.TabIndex = 1;
+            this.txtPwd.Text = "123456";
             this.txtPwd.UseSystemPasswordChar = true;
             // 
             // txtUserName
@@ -84,6 +85,7 @@ namespace MySchool
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(152, 21);
             this.txtUserName.TabIndex = 0;
+            this.txtUserName.Text = "tangwen";
             // 
             // cboStyle
             // 
@@ -127,6 +129,7 @@ namespace MySchool
             // 
             // FrmLogin
             // 
+            this.AcceptButton = this.btnDl;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MySchool.Properties.Resources.login_bj;
