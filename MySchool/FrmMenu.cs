@@ -33,5 +33,27 @@ namespace MySchool
             few.MdiParent = this;//设置父窗体容器=当前窗体
             few.Show();
         }
+        /// <summary>
+        /// 按姓名查询学员信息
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tsSelectByname_Click(object sender, EventArgs e)
+        {
+            FrmStudent frm = new FrmStudent();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+        /// <summary>
+        /// 关于我们
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void msHelp_Click(object sender, EventArgs e)
+        {
+            FrmAbout frm = new FrmAbout();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

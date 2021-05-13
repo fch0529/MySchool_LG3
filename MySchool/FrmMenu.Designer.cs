@@ -33,6 +33,9 @@ namespace MySchool
             this.tsXjStudent = new System.Windows.Forms.ToolStripDropDownButton();
             this.tsSelectByname = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.tsSelectByAge = new System.Windows.Forms.ToolStripButton();
+            this.tsStudentList = new System.Windows.Forms.ToolStripButton();
+            this.tsSubjectList = new System.Windows.Forms.ToolStripButton();
             this.msAccount = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiXgpwd = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -46,9 +49,6 @@ namespace MySchool
             this.msWindows = new System.Windows.Forms.ToolStripMenuItem();
             this.msHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.tsSelectByAge = new System.Windows.Forms.ToolStripButton();
-            this.tsStudentList = new System.Windows.Forms.ToolStripButton();
-            this.tsSubjectList = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
@@ -69,6 +69,7 @@ namespace MySchool
             this.tsSelectByname.Name = "tsSelectByname";
             this.tsSelectByname.Size = new System.Drawing.Size(136, 22);
             this.tsSelectByname.Text = "按姓名查询学生信息";
+            this.tsSelectByname.Click += new System.EventHandler(this.tsSelectByname_Click);
             // 
             // toolStrip1
             // 
@@ -83,6 +84,30 @@ namespace MySchool
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // tsSelectByAge
+            // 
+            this.tsSelectByAge.Image = global::MySchool.Properties.Resources.tsbtn1;
+            this.tsSelectByAge.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsSelectByAge.Name = "tsSelectByAge";
+            this.tsSelectByAge.Size = new System.Drawing.Size(136, 22);
+            this.tsSelectByAge.Text = "按年龄查询学生信息";
+            // 
+            // tsStudentList
+            // 
+            this.tsStudentList.Image = global::MySchool.Properties.Resources.tsbtn4;
+            this.tsStudentList.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsStudentList.Name = "tsStudentList";
+            this.tsStudentList.Size = new System.Drawing.Size(76, 22);
+            this.tsStudentList.Text = "学生列表";
+            // 
+            // tsSubjectList
+            // 
+            this.tsSubjectList.Image = global::MySchool.Properties.Resources.tsbtn3;
+            this.tsSubjectList.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsSubjectList.Name = "tsSubjectList";
+            this.tsSubjectList.Size = new System.Drawing.Size(76, 22);
+            this.tsSubjectList.Text = "科目列表";
             // 
             // msAccount
             // 
@@ -164,6 +189,7 @@ namespace MySchool
             this.msHelp.Name = "msHelp";
             this.msHelp.Size = new System.Drawing.Size(61, 21);
             this.msHelp.Text = "帮助(&H)";
+            this.msHelp.Click += new System.EventHandler(this.msHelp_Click);
             // 
             // menuStrip2
             // 
@@ -178,30 +204,6 @@ namespace MySchool
             this.menuStrip2.Size = new System.Drawing.Size(800, 25);
             this.menuStrip2.TabIndex = 1;
             this.menuStrip2.Text = "menuStrip2";
-            // 
-            // tsSelectByAge
-            // 
-            this.tsSelectByAge.Image = global::MySchool.Properties.Resources.tsbtn1;
-            this.tsSelectByAge.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsSelectByAge.Name = "tsSelectByAge";
-            this.tsSelectByAge.Size = new System.Drawing.Size(136, 22);
-            this.tsSelectByAge.Text = "按年龄查询学生信息";
-            // 
-            // tsStudentList
-            // 
-            this.tsStudentList.Image = global::MySchool.Properties.Resources.tsbtn4;
-            this.tsStudentList.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsStudentList.Name = "tsStudentList";
-            this.tsStudentList.Size = new System.Drawing.Size(76, 22);
-            this.tsStudentList.Text = "学生列表";
-            // 
-            // tsSubjectList
-            // 
-            this.tsSubjectList.Image = global::MySchool.Properties.Resources.tsbtn3;
-            this.tsSubjectList.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsSubjectList.Name = "tsSubjectList";
-            this.tsSubjectList.Size = new System.Drawing.Size(76, 22);
-            this.tsSubjectList.Text = "科目列表";
             // 
             // FrmMenu
             // 
