@@ -165,6 +165,7 @@ namespace MySchool
             this.tsmiBygrade.Name = "tsmiBygrade";
             this.tsmiBygrade.Size = new System.Drawing.Size(180, 22);
             this.tsmiBygrade.Text = "按年级查询(&G)";
+            this.tsmiBygrade.Click += new System.EventHandler(this.tsmiBygrade_Click);
             // 
             // tsmiStudentList
             // 

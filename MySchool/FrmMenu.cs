@@ -55,5 +55,17 @@ namespace MySchool
             frm.MdiParent = this;
             frm.Show();
         }
+
+        /// <summary>
+        /// 按年级查询(调用窗体)
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tsmiBygrade_Click(object sender, EventArgs e)
+        {
+            FrmSearchStudentByGrade frm = new FrmSearchStudentByGrade();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

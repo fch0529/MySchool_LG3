@@ -71,6 +71,12 @@
     <Compile Include="FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSearchStudentByGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSearchStudentByGrade.Designer.cs">
+      <DependentUpon>FrmSearchStudentByGrade.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSearchStudentByGrade.resx">
+      <DependentUpon>FrmSearchStudentByGrade.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmStudent.resx">
       <DependentUpon>FrmStudent.cs</DependentUpon>

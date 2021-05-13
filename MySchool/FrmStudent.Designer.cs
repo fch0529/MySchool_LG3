@@ -43,6 +43,8 @@ namespace MySchool
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cmsKuaijie = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiUpdate = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsmiDelect = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsKuaijie.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,6 +87,8 @@ namespace MySchool
             // 
             // lvStudent
             // 
+            this.lvStudent.BackgroundImageTiled = true;
+            this.lvStudent.CausesValidation = false;
             this.lvStudent.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
@@ -92,7 +96,9 @@ namespace MySchool
             this.columnHeader4,
             this.columnHeader5,
             this.columnHeader6});
+            this.lvStudent.ContextMenuStrip = this.cmsKuaijie;
             this.lvStudent.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lvStudent.FullRowSelect = true;
             this.lvStudent.GridLines = true;
             this.lvStudent.HideSelection = false;
             this.lvStudent.Location = new System.Drawing.Point(0, 51);
@@ -133,9 +139,11 @@ namespace MySchool
             // cmsKuaijie
             // 
             this.cmsKuaijie.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmiUpdate});
+            this.tsmiUpdate,
+            this.toolStripSeparator1,
+            this.tsmiDelect});
             this.cmsKuaijie.Name = "cmsKuaijie";
-            this.cmsKuaijie.Size = new System.Drawing.Size(181, 48);
+            this.cmsKuaijie.Size = new System.Drawing.Size(181, 76);
             // 
             // tsmiUpdate
             // 
@@ -143,6 +151,18 @@ namespace MySchool
             this.tsmiUpdate.Size = new System.Drawing.Size(180, 22);
             this.tsmiUpdate.Text = "修改";
             this.tsmiUpdate.Click += new System.EventHandler(this.tsmiUpdate_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            // 
+            // tsmiDelect
+            // 
+            this.tsmiDelect.Name = "tsmiDelect";
+            this.tsmiDelect.Size = new System.Drawing.Size(180, 22);
+            this.tsmiDelect.Text = "删除学生信息";
+            this.tsmiDelect.Click += new System.EventHandler(this.tsmiDelect_Click);
             // 
             // FrmStudent
             // 
@@ -181,5 +201,7 @@ namespace MySchool
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ContextMenuStrip cmsKuaijie;
         private System.Windows.Forms.ToolStripMenuItem tsmiUpdate;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem tsmiDelect;
     }
 }
