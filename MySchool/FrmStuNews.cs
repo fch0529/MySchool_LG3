@@ -37,7 +37,7 @@ namespace MySchool
         /// <summary>
         /// 修改学员信息
         /// </summary>
-        private void UpdateStudent()
+        public void UpdateStudent()
         {
             txtStudentNo.ReadOnly = true;
             txtStudentNo.Text = studentNo;

@@ -143,24 +143,24 @@ namespace MySchool
             this.toolStripSeparator1,
             this.tsmiDelect});
             this.cmsKuaijie.Name = "cmsKuaijie";
-            this.cmsKuaijie.Size = new System.Drawing.Size(181, 76);
+            this.cmsKuaijie.Size = new System.Drawing.Size(149, 54);
             // 
             // tsmiUpdate
             // 
             this.tsmiUpdate.Name = "tsmiUpdate";
-            this.tsmiUpdate.Size = new System.Drawing.Size(180, 22);
+            this.tsmiUpdate.Size = new System.Drawing.Size(148, 22);
             this.tsmiUpdate.Text = "修改";
             this.tsmiUpdate.Click += new System.EventHandler(this.tsmiUpdate_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(145, 6);
             // 
             // tsmiDelect
             // 
             this.tsmiDelect.Name = "tsmiDelect";
-            this.tsmiDelect.Size = new System.Drawing.Size(180, 22);
+            this.tsmiDelect.Size = new System.Drawing.Size(148, 22);
             this.tsmiDelect.Text = "删除学生信息";
             this.tsmiDelect.Click += new System.EventHandler(this.tsmiDelect_Click);
             // 
