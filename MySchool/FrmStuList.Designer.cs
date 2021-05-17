@@ -30,35 +30,35 @@ namespace MySchool
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("男", 0, 0);
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("女", 1, 1);
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("S1", 3, 2, new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2});
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("男", 0, 0);
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("女", 1, 1);
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("S2", 3, 2, new System.Windows.Forms.TreeNode[] {
-            treeNode4,
-            treeNode5});
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("男");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("女");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Y2", 3, 2, new System.Windows.Forms.TreeNode[] {
-            treeNode7,
-            treeNode8});
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("全部", 3, 2, new System.Windows.Forms.TreeNode[] {
-            treeNode3,
-            treeNode6,
-            treeNode9});
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("男", 0, 0);
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("女", 1, 1);
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("S1", 3, 2, new System.Windows.Forms.TreeNode[] {
+            treeNode11,
+            treeNode12});
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("男", 0, 0);
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("女", 1, 1);
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("S2", 3, 2, new System.Windows.Forms.TreeNode[] {
+            treeNode14,
+            treeNode15});
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("男");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("女");
+            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Y2", 3, 2, new System.Windows.Forms.TreeNode[] {
+            treeNode17,
+            treeNode18});
+            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("全部", 3, 2, new System.Windows.Forms.TreeNode[] {
+            treeNode13,
+            treeNode16,
+            treeNode19});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmStuList));
             this.splStuList = new System.Windows.Forms.SplitContainer();
             this.tvStuList = new System.Windows.Forms.TreeView();
+            this.imglStuList = new System.Windows.Forms.ImageList(this.components);
             this.dgvStuList = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.imglStuList = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splStuList)).BeginInit();
             this.splStuList.Panel1.SuspendLayout();
             this.splStuList.Panel2.SuspendLayout();
@@ -89,47 +89,67 @@ namespace MySchool
             this.tvStuList.ImageList = this.imglStuList;
             this.tvStuList.Location = new System.Drawing.Point(0, 0);
             this.tvStuList.Name = "tvStuList";
-            treeNode1.ImageIndex = 0;
-            treeNode1.Name = "节点4";
-            treeNode1.SelectedImageIndex = 0;
-            treeNode1.Text = "男";
-            treeNode2.ImageIndex = 1;
-            treeNode2.Name = "节点5";
-            treeNode2.SelectedImageIndex = 1;
-            treeNode2.Text = "女";
-            treeNode3.ImageIndex = 3;
-            treeNode3.Name = "节点1";
-            treeNode3.SelectedImageIndex = 2;
-            treeNode3.Text = "S1";
-            treeNode4.ImageIndex = 0;
-            treeNode4.Name = "节点6";
-            treeNode4.SelectedImageIndex = 0;
-            treeNode4.Text = "男";
-            treeNode5.ImageIndex = 1;
-            treeNode5.Name = "节点7";
-            treeNode5.SelectedImageIndex = 1;
-            treeNode5.Text = "女";
-            treeNode6.ImageIndex = 3;
-            treeNode6.Name = "节点2";
-            treeNode6.SelectedImageIndex = 2;
-            treeNode6.Text = "S2";
-            treeNode7.Name = "节点8";
-            treeNode7.Text = "男";
-            treeNode8.Name = "节点9";
-            treeNode8.Text = "女";
-            treeNode9.ImageIndex = 3;
-            treeNode9.Name = "节点3";
-            treeNode9.SelectedImageIndex = 2;
-            treeNode9.Text = "Y2";
-            treeNode10.ImageIndex = 3;
-            treeNode10.Name = "节点0";
-            treeNode10.SelectedImageIndex = 2;
-            treeNode10.Text = "全部";
+            treeNode11.ImageIndex = 0;
+            treeNode11.Name = "节点4";
+            treeNode11.SelectedImageIndex = 0;
+            treeNode11.Tag = "男";
+            treeNode11.Text = "男";
+            treeNode12.ImageIndex = 1;
+            treeNode12.Name = "节点5";
+            treeNode12.SelectedImageIndex = 1;
+            treeNode12.Tag = "女";
+            treeNode12.Text = "女";
+            treeNode13.ImageIndex = 3;
+            treeNode13.Name = "节点1";
+            treeNode13.SelectedImageIndex = 2;
+            treeNode13.Tag = "1";
+            treeNode13.Text = "S1";
+            treeNode14.ImageIndex = 0;
+            treeNode14.Name = "节点6";
+            treeNode14.SelectedImageIndex = 0;
+            treeNode14.Tag = "男";
+            treeNode14.Text = "男";
+            treeNode15.ImageIndex = 1;
+            treeNode15.Name = "节点7";
+            treeNode15.SelectedImageIndex = 1;
+            treeNode15.Tag = "女";
+            treeNode15.Text = "女";
+            treeNode16.ImageIndex = 3;
+            treeNode16.Name = "节点2";
+            treeNode16.SelectedImageIndex = 2;
+            treeNode16.Tag = "2";
+            treeNode16.Text = "S2";
+            treeNode17.Name = "节点8";
+            treeNode17.Tag = "男";
+            treeNode17.Text = "男";
+            treeNode18.Name = "节点9";
+            treeNode18.Tag = "女";
+            treeNode18.Text = "女";
+            treeNode19.ImageIndex = 3;
+            treeNode19.Name = "节点3";
+            treeNode19.SelectedImageIndex = 2;
+            treeNode19.Tag = "3";
+            treeNode19.Text = "Y2";
+            treeNode20.ImageIndex = 3;
+            treeNode20.Name = "节点0";
+            treeNode20.SelectedImageIndex = 2;
+            treeNode20.Tag = "0";
+            treeNode20.Text = "全部";
             this.tvStuList.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode10});
+            treeNode20});
             this.tvStuList.SelectedImageIndex = 0;
             this.tvStuList.Size = new System.Drawing.Size(143, 445);
             this.tvStuList.TabIndex = 0;
+            this.tvStuList.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvStuList_AfterSelect);
+            // 
+            // imglStuList
+            // 
+            this.imglStuList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglStuList.ImageStream")));
+            this.imglStuList.TransparentColor = System.Drawing.Color.Transparent;
+            this.imglStuList.Images.SetKeyName(0, "男职2.png");
+            this.imglStuList.Images.SetKeyName(1, "女职.png");
+            this.imglStuList.Images.SetKeyName(2, "文件夹 (1).png");
+            this.imglStuList.Images.SetKeyName(3, "文件夹.png");
             // 
             // dgvStuList
             // 
@@ -149,6 +169,7 @@ namespace MySchool
             this.dgvStuList.ReadOnly = true;
             this.dgvStuList.RowHeadersVisible = false;
             this.dgvStuList.RowTemplate.Height = 23;
+            this.dgvStuList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvStuList.Size = new System.Drawing.Size(552, 445);
             this.dgvStuList.TabIndex = 0;
             // 
@@ -187,23 +208,16 @@ namespace MySchool
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
             // 
-            // imglStuList
-            // 
-            this.imglStuList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglStuList.ImageStream")));
-            this.imglStuList.TransparentColor = System.Drawing.Color.Transparent;
-            this.imglStuList.Images.SetKeyName(0, "男职2.png");
-            this.imglStuList.Images.SetKeyName(1, "女职.png");
-            this.imglStuList.Images.SetKeyName(2, "文件夹 (1).png");
-            this.imglStuList.Images.SetKeyName(3, "文件夹.png");
-            // 
             // FrmStuList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(703, 451);
             this.Controls.Add(this.splStuList);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmStuList";
             this.Text = "学生信息列表";
+            this.Load += new System.EventHandler(this.FrmStuList_Load);
             this.splStuList.Panel1.ResumeLayout(false);
             this.splStuList.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splStuList)).EndInit();

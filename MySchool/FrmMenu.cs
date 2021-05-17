@@ -67,5 +67,29 @@ namespace MySchool
             frm.MdiParent = this;
             frm.Show();
         }
+
+        /// <summary>
+        /// 学生列表
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tsStudentList_Click(object sender, EventArgs e)
+        {
+            FrmStuList frm = new FrmStuList();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        /// <summary>
+        /// 科目列表
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tsSubjectList_Click(object sender, EventArgs e)
+        {
+            FrmSubList frm = new FrmSubList();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
